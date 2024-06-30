@@ -61,10 +61,6 @@ namespace DiscordBotTutorialExampleProject
             //Enabling the Client to use Slash Commands
             var slashCommandsConfig = Client.UseSlashCommands();
 
-            //7. Register your Command Classes
-            Commands.RegisterCommands<Basics>();
-            Commands.RegisterCommands<DiscordComponentExamples>();
-
             //Registering Slash Commands
             slashCommandsConfig.RegisterCommands<BasicSL>();
             slashCommandsConfig.RegisterCommands<CalculatorSL>();
