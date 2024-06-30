@@ -18,7 +18,7 @@ namespace DiscordBotTutorialExampleProject
         public static CommandsNextExtension Commands { get; set; }
         static async Task Main(string[] args)
         {
-            //1. Retrieve Token/Prefix from config.json
+            //1. Retrieve Token from config.json
             var configProperties = new ConfigJsonReader();
             await configProperties.ReadJSON();
 
@@ -50,7 +50,6 @@ namespace DiscordBotTutorialExampleProject
             //5. Create the Command Configuration
             var commandsConfig = new CommandsNextConfiguration
             {
-                StringPrefixes = new string[] { configProperties.discordPrefix },
                 EnableMentionPrefix = true,
                 EnableDms = true,
                 EnableDefaultHelp = false
