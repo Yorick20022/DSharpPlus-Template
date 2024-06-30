@@ -1,4 +1,4 @@
-using DiscordBotTutorialExampleProject.Commands;
+using DiscordBotTutorialExampleProject.Commands.slash;
 using DiscordBotTutorialExampleProject.Config;
 using DSharpPlus;
 using DSharpPlus.CommandsNext;
